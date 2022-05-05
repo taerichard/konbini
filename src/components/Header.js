@@ -1,20 +1,25 @@
-import Product from "./components/Products";
-import Mission from "./components/Mission";
-import FindUs from "./components/FindUs";
-import Events from "./components/Events";
+import Product from "./Products";
+import Mission from "./Mission";
+import FindUs from "./FindUs";
+import Events from "./Events";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React from "react";
+import Home from "./Home";
+
+
 
 const Header = () => {
     return (
         <Router>
-        <nav>
+        <nav style={styles.navContainer}>
+          <Link to="/Home">Konbini</Link>
           <Link to="/product">Product</Link>
           <Link to="/mission">Mission</Link>
           <Link to="/findus">Find Us</Link>
           <Link to="/events">Events</Link>
         </nav>
         <Routes>
+          <Route path="/Home" element={<Home/>}/>
           <Route path="/product" element={<Product/>}/>
           <Route path="/mission" element={<Mission/>} />
           <Route path="/findus" element={<FindUs/>} />
@@ -24,4 +29,12 @@ const Header = () => {
     )
 }
 
+const styles = {
+  navContainer:{
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-evenly',
+    border: '3px solid black',
+  }
+}
 export default Header; 
