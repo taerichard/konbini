@@ -25,9 +25,9 @@
     "services services services services"
     "contact contact contact contact"
     "footer footer footer footer";
-  /* grid-template-columns: repeat(4, 25%); */
-  /* grid-template-columns: repeat(12, 1fr); */
-  grid-template-rows: 300px 300px 1300px 500px 350px 200px;
+  /* 
+  grid-template-columns: repeat(12, 1fr); */
+  grid-template-rows: 300px 300px 900px 500px 350px 200px;
 }
 
 /* header / nav*/
@@ -92,8 +92,15 @@
 
 .products {
   grid-area: products;
-}
+  display: grid;
 
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 500px 500px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  overflow: hidden;
+  border: 2px solid red;
+}
 .services {
   grid-area: services;
 }

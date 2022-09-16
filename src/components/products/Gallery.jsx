@@ -1,4 +1,5 @@
 import React from "react";
+import "./galleryStyles.css";
 import bombImage from "../../resources/images/products/bomb.jpg";
 import gentleManImage from "../../resources/images/products/gentlemen.jpg";
 import man from "../../resources/images/products/man.jpg";
@@ -10,7 +11,8 @@ import image9 from "../../resources/images/products/asian.jpg";
 
 const Gallery = () => {
   return (
-    <div>
+    // <div className="container">
+    <>
       <div class="gallery-container">
         <div class="gallery-item">
           <div class="image">
@@ -87,7 +89,8 @@ const Gallery = () => {
           <div class="text">asian</div>
         </div>
       </div>
-    </div>
+      {/* </div> */}
+    </>
   );
 };
 
