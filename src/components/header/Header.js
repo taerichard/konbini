@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./headerStyles.css";
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
 
 const largeNav = (
   <div className="large-nav-container">

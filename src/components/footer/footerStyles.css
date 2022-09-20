@@ -1,0 +1,36 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  border: 2px solid blue;
+}
+
+.footer-container h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+.footer-container :not(h1, .footer-email-signature) {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.footer-container > * {
+  padding-top: 15px;
+  letter-spacing: 3px;
+}
+
+.footer-contact {
+  /* width: 500px; */
+  border: 2px solid red;
+  display: flex;
+  align-content: space-around;
+}
+
+.footer-contact .footer-email {
+  margin-left: auto;
+}

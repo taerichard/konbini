@@ -8,7 +8,6 @@ import smooth from "../../resources/images/products/smooth.jpg";
 import train from "../../resources/images/products/train.jpg";
 import weird from "../../resources/images/products/weird.jpg";
 import image9 from "../../resources/images/products/asian.jpg";
-import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
