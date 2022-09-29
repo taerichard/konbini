@@ -54,5 +54,37 @@
   padding: 42px 20px 20px 20px;
 }
 
+.large-nav-container {
+  display: none;
+}
 @media (min-width: 1100px) {
+  .large-nav-container {
+    display: block;
+  }
+  .large-nav-items {
+    display: flex;
+    list-style: none;
+  }
+  .large-nav-item {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .large-nav-item:hover {
+    cursor: pointer;
+  }
+  .large-nav-item:not(:last-child) {
+    padding-right: 70px;
+  }
+
+  .large-nav-items {
+    grid-column-start: 10;
+    grid-row-start: 2;
+  }
+
+  .header-nav-menu {
+    visibility: hidden;
+  }
 }

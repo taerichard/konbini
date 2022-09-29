@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./headerStyles.css";
+import { useMediaQuery } from "react-responsive";
 // import { Link, NavLink } from "react-router-dom";
 
 const largeNav = (
@@ -16,6 +17,10 @@ const Header = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSideBar = () => setSidebar(!sidebar);
+
+  const isDesktop = useMediaQuery({ minDeviceWidth: 1100 });
+  const isMobile = useMediaQuery({ maxDeviceWidth: 1100 });
+
   return (
     <>
       <header className="header">
@@ -23,6 +28,7 @@ const Header = () => {
           <h1 classNameName="header-logo">konbini</h1>
         </div>
         <div className="header-nav">
+          {isDesktop && largeNav}
           <span onClick={showSideBar} className="header-nav-menu">
             menu
           </span>

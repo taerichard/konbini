@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 35px;
-  border: 2px solid blue;
 }
 
 .footer-container h1 {
@@ -15,7 +14,7 @@
 }
 
 .footer-container :not(h1, .footer-email-signature) {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
