@@ -47,7 +47,6 @@
 }
 
 .services-image {
-  border: 2px solid red;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -55,4 +54,34 @@
   font-size: 1.3rem;
   padding-top: 5px;
   letter-spacing: 2px;
+}
+
+@media (min-width: 1100px) {
+  .services-container {
+    margin-top: 8rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin-bottom: 10rem;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .services {
+    /* display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 30vw);
+    grid-gap: 45px; */
+
+    display: flex;
+  }
+
+  .services .services-image {
+    width: 28%;
+    height: 500px;
+  }
+
+  .services-title {
+    font-size: 4rem;
+    font-weight: 400;
+  }
 }
