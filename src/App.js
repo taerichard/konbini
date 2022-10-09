@@ -1,31 +1,31 @@
 import "./styles/appStyles.css";
-import Form from "./components/contact/Form";
 import Footer from "./components/footer/Footer";
-import Products from "./components/products/Products";
+import { Routes, Route, useRoutes } from "react-router-dom";
 
 import Header from "./components/header/Header.js";
-import Title from "./components/Title";
-import Services from "./components/services/Services";
+
+import Main from "./pages/Main";
+import Accessories from "./pages/Accessories";
+import Disposables from "./pages/Disposables";
+import Ecigs from "./pages/Ecigs";
+import Juice from "./pages/Juice";
+import Mods from "./pages/Mods";
+import Pods from "./pages/Pods";
 
 function App() {
   return (
     <div className="container">
       <Header />
-      <div className="title">
-        <Title />
-      </div>
-      <div>
-        <Products />
-      </div>
-      <div>
-        <Services />
-      </div>
-      <div className="contact">
-        <Form />
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="accessories" element={<Accessories />} />
+        <Route path="disposables" element={<Disposables />} />
+        <Route path="ecigs" element={<Ecigs />} />
+        <Route path="juice" element={<Juice />} />
+        <Route path="mods" element={<Mods />} />
+        <Route path="pods" element={<Pods />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
