@@ -8,7 +8,8 @@ import smooth from "../../resources/images/products/smooth.jpg";
 import train from "../../resources/images/products/train.jpg";
 import weird from "../../resources/images/products/weird.jpg";
 import image9 from "../../resources/images/products/asian.jpg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Mods from "../../pages/Mods";
 
 const Products = () => {
   return (
@@ -17,19 +18,27 @@ const Products = () => {
       <div className="gallery">
         <figure className="gallery__item gallery__item--1">
           <img className="gallery__img" src={bombImage} alt="japanese food" />
-          <p>Mods</p>
+          <p>
+            {" "}
+            <NavLink to="mods">Mods</NavLink>
+          </p>
           <div class="gallery__overlay"></div>
         </figure>
 
         <figure className="gallery__item gallery__item--2">
           <img className="gallery__img" src={manBun} alt="japanese food" />
-          <p>ECigs</p>
+          <p>
+            <NavLink to="ecigs">ECigs</NavLink>
+          </p>
           <div class="gallery__overlay"></div>
         </figure>
 
         <figure className="gallery__item gallery__item--3">
           <img className="gallery__img" src={man} alt="japanese food" />
-          <p>Pods</p>
+          <p>
+            {" "}
+            <NavLink to="pods">Pods</NavLink>
+          </p>
           <div class="gallery__overlay"></div>
         </figure>
 
@@ -39,19 +48,28 @@ const Products = () => {
             src={gentleManImage}
             alt="japanese food"
           />
-          <p>Juice</p>
+          <p>
+            {" "}
+            <NavLink to="juice">Juice</NavLink>
+          </p>
           <div class="gallery__overlay"></div>
         </figure>
 
         <figure className="gallery__item gallery__item--5">
           <img className="gallery__img" src={smooth} alt="japanese food" />
-          <p>Disposables</p>
+          <p>
+            {" "}
+            <NavLink to="disposables">Disposables</NavLink>
+          </p>
           <div class="gallery__overlay"></div>
         </figure>
 
         <figure className="gallery__item gallery__item--6">
           <img className="gallery__img" src={weird} alt="japanese food" />
-          <p>Accessories</p>
+          <p>
+            {" "}
+            <NavLink to="accessories">accessories</NavLink>
+          </p>
           <div class="gallery__overlay"></div>
         </figure>
       </div>

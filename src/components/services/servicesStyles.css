@@ -1,0 +1,84 @@
+.services-container {
+  margin-top: 8rem;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.services-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 8px;
+  padding-top: 8rem;
+  /* padding-bottom: 2rem; */
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 30vw);
+  grid-gap: 45px;
+}
+
+.services .services-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.services-1 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.services-2 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+.services-3 {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+.services-image {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.services-image p {
+  font-size: 1.3rem;
+  padding-top: 5px;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 1100px) {
+  .services-container {
+    width: 100%;
+    margin-bottom: 10rem;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .services {
+    /* display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 30vw);
+    grid-gap: 45px; */
+
+    display: flex;
+  }
+
+  .services .services-image {
+    width: 28%;
+    height: 500px;
+  }
+
+  .services-title {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+}
