@@ -5,3 +5,14 @@ body {
 .container {
   border: 2px solid red;
 }
+
+nav {
+  border: 2px solid blue;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-items {
+  position: fixed;
+  display: flex;
+}
