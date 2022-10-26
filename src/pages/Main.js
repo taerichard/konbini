@@ -5,6 +5,8 @@ import Form from "../components/contact/Form";
 import { Link } from "react-scroll";
 import { slide as Menu } from "react-burger-menu";
 import React, { useState } from "react";
+import { data } from "../resources/data/data";
+console.log(data);
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);

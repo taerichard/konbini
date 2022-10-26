@@ -10,6 +10,7 @@ import weird from "../../resources/images/products/weird.jpg";
 import image9 from "../../resources/images/products/asian.jpg";
 import { NavLink } from "react-router-dom";
 import Mods from "../../pages/Mods";
+import { data } from "../../resources/data/data";
 
 const Products = () => {
   return (
@@ -19,8 +20,9 @@ const Products = () => {
         <figure className="gallery__item gallery__item--1">
           <img className="gallery__img" src={bombImage} alt="japanese food" />
           <p>
-            {" "}
-            <NavLink to="mods">Mods</NavLink>
+            <NavLink to="mods" state={{ productsData: data }}>
+              Mods
+            </NavLink>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
