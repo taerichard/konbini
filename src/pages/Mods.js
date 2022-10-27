@@ -3,6 +3,7 @@ import JapaneseTitle from "../components/shared/JapaneseTitle";
 import { useLocation } from "react-router-dom";
 import austinImg from "../resources/images/austin/art.jpg";
 import "./styles/modsStyles.css";
+import { Link } from "react-router-dom";
 
 // style the products like the link
 // https://minimalissimo.com/
@@ -10,23 +11,30 @@ import "./styles/modsStyles.css";
 export default function Mods() {
   let location = useLocation();
   const { productsData } = location.state;
+  console.log(location);
 
   return (
-    <div>
-      <JapaneseTitle />
-      <h1 className="mods-title">Mods</h1>
-      <div className="mods-titleImg">
+    <div className="mods-container">
+      <Link to="/" className="mods-title">
+        <h1>Konbini</h1>
+      </Link>
+      {/* <JapaneseTitle /> */}
+
+      {/* <div className="mods-titleImg">
         <img src={austinImg} />
-      </div>
+      </div> */}
+      <h1 className="mods-title">Mods</h1>
       <div className="mods-cards">
         {productsData.map((item) => {
           return (
             <div className="mods-card">
-              <div className="mods-img">
-                <img src={item.img} />
+              <div className="mods-border">
+                <div className="mods-img">
+                  <img src={item.img} />
+                </div>
+                {/* <p className="mods-name">{item.title}</p>
+                <p className="mods-price">{item.price}</p> */}
               </div>
-              <p>{item.title}</p>
-              <p>{item.price}</p>
             </div>
           );
         })}

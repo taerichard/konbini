@@ -1,12 +1,8 @@
-import Title from "../components/Title";
-import Services from "../components/services/Services";
-import Products from "../components/products/Products";
-import Form from "../components/contact/Form";
-import { Link } from "react-scroll";
-import { slide as Menu } from "react-burger-menu";
 import React, { useState } from "react";
+import { Link } from "react-scroll";
+import "../../styles/appStyles.css";
 
-const Main = () => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const slider = () => {
@@ -106,32 +102,18 @@ const Main = () => {
       </nav>
     );
   };
+
   return (
-    <div>
-      <header className="nav">
-        <h1 className="nav-konbini">Konbini</h1>
-        <p className="sidebar-menu" onClick={() => setIsOpen(!isOpen)}>
-          Menu
-        </p>
-        {isOpen && slider()}
-        {largeNav()}
-      </header>
-      <div onClick={() => setIsOpen(false)}>
-        <div id="about-wrapper">
-          <Title />
-        </div>
-        <div id="products-wrapper">
-          <Products />
-        </div>
-        <div id="services-wrapper">
-          <Services />
-        </div>
-        <div id="contact-wrapper">
-          <Form />
-        </div>
-      </div>
-    </div>
+    <header className="nav" onClick={() => setIsOpen(!isOpen)}>
+      <h1 className="nav-konbini">Konbini</h1>
+      <p className="sidebar-menu" onClick={() => setIsOpen(!isOpen)}>
+        Menu
+      </p>
+      <p className="sidebar-menu" onClick={() => setIsOpen(!isOpen)}></p>
+      {isOpen && slider()}
+      {largeNav()}
+    </header>
   );
 };
 
-export default Main;
+export default Header;
