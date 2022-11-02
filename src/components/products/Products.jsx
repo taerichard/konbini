@@ -9,7 +9,7 @@ import train from "../../resources/images/products/train.jpg";
 import weird from "../../resources/images/products/weird.jpg";
 import image9 from "../../resources/images/products/asian.jpg";
 import { NavLink } from "react-router-dom";
-import Mods from "../../pages/Mods";
+import { data } from "../../resources/data/data";
 
 const Products = () => {
   return (
@@ -19,8 +19,9 @@ const Products = () => {
         <figure className="gallery__item gallery__item--1">
           <img className="gallery__img" src={bombImage} alt="japanese food" />
           <p>
-            {" "}
-            <NavLink to="mods">Mods</NavLink>
+            <a to="mods" state={{ productsData: data }}>
+              Mods
+            </a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -28,7 +29,9 @@ const Products = () => {
         <figure className="gallery__item gallery__item--2">
           <img className="gallery__img" src={manBun} alt="japanese food" />
           <p>
-            <NavLink to="ecigs">ECigs</NavLink>
+            <a to="ecigs" state={{ productsData: data }}>
+              Ecigs
+            </a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -37,7 +40,7 @@ const Products = () => {
           <img className="gallery__img" src={man} alt="japanese food" />
           <p>
             {" "}
-            <NavLink to="pods">Pods</NavLink>
+            <a to="pods">Pods</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -50,7 +53,7 @@ const Products = () => {
           />
           <p>
             {" "}
-            <NavLink to="juice">Juice</NavLink>
+            <a to="juice">Juice</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -59,7 +62,7 @@ const Products = () => {
           <img className="gallery__img" src={smooth} alt="japanese food" />
           <p>
             {" "}
-            <NavLink to="disposables">Disposables</NavLink>
+            <a to="disposables">Disposables</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -68,7 +71,7 @@ const Products = () => {
           <img className="gallery__img" src={weird} alt="japanese food" />
           <p>
             {" "}
-            <NavLink to="accessories">accessories</NavLink>
+            <a to="accessories">accessories</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>

@@ -6,25 +6,28 @@ import Accessories from "./pages/Accessories";
 import Disposables from "./pages/Disposables";
 import Ecigs from "./pages/Ecigs";
 import Juice from "./pages/Juice";
-import Mods from "./pages/Mods";
+import Mods from "./pages/Mods/Mods";
 import Pods from "./pages/Pods";
 import Title from "./components/Title";
 import Services from "./components/services/Services";
 import Products from "./components/products/Products";
 import Form from "./components/contact/Form";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 function App() {
   return (
     <div className="container">
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="accessories" element={<Accessories />} />
-        <Route path="disposables" element={<Disposables />} />
-        <Route path="ecigs" element={<Ecigs />} />
-        <Route path="juice" element={<Juice />} />
-        <Route path="mods" element={<Mods />} />
-        <Route path="pods" element={<Pods />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="accessories" element={<Accessories />} />
+          <Route path="disposables" element={<Disposables />} />
+          <Route path="ecigs" element={<Ecigs />} />
+          <Route path="juice" element={<Juice />} />
+          <Route path="mods" element={<Mods />} />
+          <Route path="pods" element={<Pods />} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </div>
   );
