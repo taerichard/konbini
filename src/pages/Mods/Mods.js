@@ -1,9 +1,9 @@
 import React from "react";
-import JapaneseTitle from "../components/shared/JapaneseTitle";
+import JapaneseTitle from "../../components/shared/JapaneseTitle";
 import { useLocation } from "react-router-dom";
-import austinImg from "../resources/images/austin/art.jpg";
-import "./styles/modsStyles.css";
-import { Link } from "react-router-dom";
+// import austinImg from "../resources/images/austin/art.jpg";
+import "../styles/modsStyles.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 // style the products like the link
 // https://minimalissimo.com/

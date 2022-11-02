@@ -9,7 +9,6 @@ import train from "../../resources/images/products/train.jpg";
 import weird from "../../resources/images/products/weird.jpg";
 import image9 from "../../resources/images/products/asian.jpg";
 import { NavLink } from "react-router-dom";
-import Mods from "../../pages/Mods";
 import { data } from "../../resources/data/data";
 
 const Products = () => {
@@ -30,7 +29,9 @@ const Products = () => {
         <figure className="gallery__item gallery__item--2">
           <img className="gallery__img" src={manBun} alt="japanese food" />
           <p>
-            <NavLink to="ecigs">ECigs</NavLink>
+            <NavLink to="ecigs" state={{ productsData: data }}>
+              Ecigs
+            </NavLink>
           </p>
           <div class="gallery__overlay"></div>
         </figure>

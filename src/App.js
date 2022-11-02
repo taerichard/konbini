@@ -6,7 +6,7 @@ import Accessories from "./pages/Accessories";
 import Disposables from "./pages/Disposables";
 import Ecigs from "./pages/Ecigs";
 import Juice from "./pages/Juice";
-import Mods from "./pages/Mods";
+import Mods from "./pages/Mods/Mods";
 import Pods from "./pages/Pods";
 import Title from "./components/Title";
 import Services from "./components/services/Services";
