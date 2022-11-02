@@ -19,9 +19,9 @@ const Products = () => {
         <figure className="gallery__item gallery__item--1">
           <img className="gallery__img" src={bombImage} alt="japanese food" />
           <p>
-            <NavLink to="mods" state={{ productsData: data }}>
+            <a to="mods" state={{ productsData: data }}>
               Mods
-            </NavLink>
+            </a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -29,9 +29,9 @@ const Products = () => {
         <figure className="gallery__item gallery__item--2">
           <img className="gallery__img" src={manBun} alt="japanese food" />
           <p>
-            <NavLink to="ecigs" state={{ productsData: data }}>
+            <a to="ecigs" state={{ productsData: data }}>
               Ecigs
-            </NavLink>
+            </a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -40,7 +40,7 @@ const Products = () => {
           <img className="gallery__img" src={man} alt="japanese food" />
           <p>
             {" "}
-            <NavLink to="pods">Pods</NavLink>
+            <a to="pods">Pods</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -53,7 +53,7 @@ const Products = () => {
           />
           <p>
             {" "}
-            <NavLink to="juice">Juice</NavLink>
+            <a to="juice">Juice</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -62,7 +62,7 @@ const Products = () => {
           <img className="gallery__img" src={smooth} alt="japanese food" />
           <p>
             {" "}
-            <NavLink to="disposables">Disposables</NavLink>
+            <a to="disposables">Disposables</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>
@@ -71,7 +71,7 @@ const Products = () => {
           <img className="gallery__img" src={weird} alt="japanese food" />
           <p>
             {" "}
-            <NavLink to="accessories">accessories</NavLink>
+            <a to="accessories">accessories</a>
           </p>
           <div class="gallery__overlay"></div>
         </figure>

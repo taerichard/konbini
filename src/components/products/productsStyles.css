@@ -11,6 +11,9 @@
   padding-bottom: 2rem;
 }
 
+a {
+  cursor: pointer;
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
