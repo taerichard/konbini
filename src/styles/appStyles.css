@@ -22,6 +22,7 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   padding: 20px 0 0 20px;
+  display: block;
 }
 
 .sidenav {
@@ -100,7 +101,8 @@ body {
     /* border: 2px solid red; */
     font-size: 2rem;
     padding: 35px;
-    width: auto;
+    /* width: auto; */
+    display: block;
   }
 
   .largenav-item:hover {
